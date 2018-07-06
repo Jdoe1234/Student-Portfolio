@@ -20,21 +20,64 @@
 
     <main>
       <nav>
-        <a href="webdesign.html"><h2>WEBDESIGN</h2></a>
-        <a href="animation.html"><h2>ANIMATION</h2></a>
-        <a href="3d-modeling.html"><h2>3D Modeling</h2></a>
-        <a href="cv.html"><h2>CV</h2></a>
+        <button type="button" name="button" onclick="showWeb();"><h2>WEBDESIGN</h2></button>
+        <div id="subMenuWeb">
+          <h3>Billum Friskole</h3>
+          <h3>KEDU - KUBO Robotics</h3>
+          <h3>Erhvervsakademi Lillebælt</h3>
+        </div>
+        <button type="button" name="button" onclick="showAni();"><h2>ANIMATION</h2></button>
+        <div id="subMenuAni">
+          <h3>Summer Project</h3>
+          <h3>Animation Principles</h3>
+          <h3>Stopmoption workshop</h3>
+        </div>
+        <button type="button" name="button" onclick="show3D();"><h2>3D-MODELING</h2></button>
+        <div id="subMenu3D">
+          <h3>Logo Animation</h3>
+          <h3>Fundamentals Robot</h3>
+        </div><button type="button" name="button" onclick="showCV();"><h2>CV</h2></button>
+        <div id="subMenuCV">
+          <a href="assets/img/logo_white_trans.png" download="">
+          <p style="direction: rtl;margin: 0;font-size: 15px;font-family: "FashionFetishLight";margin: 10px 1.5vw 0 0;">
+            URK - Udtalelse</p>
+          </a>
+        </div>
       </nav>
       <div id="content-panel">
 
       </div>
-      <article class="">
-        <p style="margin-left:0;">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Nullam congue fermentum nisi volutpat sodales.</p>
-        <p>Morbi ultricies condimentum orci. Praesent rutrum dictum nulla eu blandit. Cras vitae accumsan ante. Vestibulum scelerisque, eros eu facilisis viverra, dui erat facilisis orci.</p>
-        <p style="margin-left:0;">(1/3)</p>
+      <article>
+
+        <div id="frontPageArticle">
+          <h4>Tino</h4>
+          <p style="margin:10px 5px 5px 10px;">TINO0144@EDU.EAL.DK</p>
+          <p>88 88 88 88</p>
+        </div>
+
+        <div id="cvArticle">
+          <p style="margin-left:0;">Jeg har uden for den aktuelle uddannelse erhvervet mig stor erfaring på 2 områder:</p>
+          <h4>PC/Elektronik</h4>
+          <p>Udannelsesvis har jeg har været igennem IT-supporter grundforløb, og taget 1 år på dateteknikker forløbet.</p>
+          <p>jeg har udover udannelse og selv bygget, samlet, og renset hardware, samt foretaget software "reperationer".</p>
+          <h4>Socialt arbejde</h4>
+          <p>Udannelsesvis har jeg læst 1 år på pædagigseminariet.</p>
+          <p>Jeg har derudover arbejdet i klasselokale, børnehave, SFO, specialundervisning og har fungeret som Afdeligsleder i en RØDE KORS lektiecafé.</p>
+
+        </div>
+
+        <div id="webdesignArticle">
+          <h4>Billum Friskole</h4>
+          <p>er andet semesters eksamens projekt</p>
+          <h4>KEDU - KUBO Robotics</h4>
+          <p>er et project i starten af 2. semester</p>
+          <h4>Ehrvervsakademi Lillebælt</h4>
+          <p>er fra midt første semester</p>
+        </div>
+
       </article>
     </main>
 
   </body>
+  <script src="assets/script/script.js"></script>
 </html>
