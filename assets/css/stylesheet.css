@@ -73,6 +73,7 @@ h2{
   font-family: "FashionFetishBold";
   letter-spacing: 5px;
   margin: 0 0 0 0;
+  line-height: 0.85;
 }
 footer h2{
   margin-right: 1vw;
@@ -142,16 +143,18 @@ nav{
 button{
   background-color: black;
   border: none;
-}
-button:first-child{
-  background-color: black;
-  border: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
 }
 button:not(:first-child) {
-  margin-top: 20px;
+  margin-top: 5vh;
 }
 button:active h2{
   text-decoration: underline;
+}
+button:hover{
+  cursor: pointer;
 }
 button:focus{
   outline:0;
@@ -168,7 +171,10 @@ article{
 .subMenu{
   display: none;
 }
-#subMenuWeb, #subMenuAni, #subMenu3D, #subMenuCV, #cvArticle, #webdesignArticle{
+#subMenuWeb, #subMenuAni, #subMenu3D, #subMenuCV, #webdesignArticle, #animationArticle, #dddArticle, #cvArticle{
+  display: none;
+}
+.wdArticle, .wdArtickle, .aniArticle, .dddArticle{
   display: none;
 }
 #frontPage{
