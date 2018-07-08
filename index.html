@@ -8,13 +8,20 @@
   </head>
   <body>
 
+    <div id="infoCard">
+      <button style="width:100%;height:100%;border: 2px solid red;" type="button" name="button" onclick="hideInfo();">
+      </button>
+    </div>
+
     <header>
       <a href="index.html">
-        <img style="height:50px;" src="assets/img/logo_white_trans.png" alt="logo">
+        <h1 style="text-decoration:underline;">PORTFOLIO</h1>
       </a>
-      <h1>PORTFOLIO</h1>
-      <a href="blog.frontpage.html">
-        <h4>BLOG</h4>
+      <button type="button" name="button" onclick="showInfo();">
+        <img style="height:50px;" src="assets/img/logo_white_trans.png" alt="logo">
+      </button>
+      <a href="blog.frontpage.html" style="margin-left:68px;">
+        <h5>BLOG</h5>
       </a>
     </header>
 
@@ -39,8 +46,8 @@
         </div><button type="button" name="button" onclick="showCV();"><h2>CV</h2></button>
         <div id="subMenuCV">
           <a href="assets/img/logo_white_trans.png" download="">
-          <p style="direction: rtl;margin: 0;font-size: 15px;font-family: "FashionFetishLight";margin: 10px 1.5vw 0 0;">
-            URK - Udtalelse</p>
+          <h3>
+            URK - Udtalelse</h3>
           </a>
         </div>
       </nav>
@@ -50,8 +57,8 @@
       <article>
 
         <div id="frontPageArticle">
-          <h4>Tino</h4>
-          <p style="margin:10px 5px 5px 10px;">TINO0144@EDU.EAL.DK</p>
+          <h4>Contac Info:</h4>
+          <p>TINO0144@EDU.EAL.DK</p>
           <p>88 88 88 88</p>
         </div>
 
@@ -117,5 +124,5 @@
     </main>
 
   </body>
-  <script src="assets/script/script.js"></script>
+  <script src="assets/script/portfolio.js"></script>
 </html>

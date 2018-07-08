@@ -41,10 +41,6 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-/*border-bottom: solid rgb(50, 50, 50) 5px;*/
-}
-header h1{
-  color: black;
 }
 footer{
   display: flex;
@@ -58,35 +54,25 @@ footer{
   width: 15vw;
   background-color: black;
 }
+/* page navigation for header, identical to h5 */
 h1{
-  color: grey;
-  display: flex;
-  font-size: 50px;
-  font-family: "FashionFetishBold";
+  color: lightgrey;
+  margin: 0;
+  font-size: 13px;
+  font-family: "FashionFetish";
   letter-spacing: 5px;
-  margin: 0 0 0 0;
 }
+/* Main Menu navigation */
 h2{
   color: white;
   display: flex;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "FashionFetishBold";
   letter-spacing: 5px;
   margin: 0 0 0 0;
   line-height: 0.85;
 }
-footer h2{
-  margin-right: 1vw;
-  font-size: 20px;
-}
-footer h3{
-  margin-right: 2vw;
-  font-size: 15px;
-}
-a {
-  text-decoration: inherit;
-  color: inherit;
-}
+/* submenu headers */
 h3{
   direction: rtl;
   margin: 0;
@@ -94,18 +80,22 @@ h3{
   font-family: "FashionFetishLight";
   margin: 10px 1.5vw 0 0;
 }
-a h2{
-  margin-top: 30px;
-}
-a:first-child h2{
-  margin: 0 3vw 0 0;
-}
-footer a:first-child h2{
-  margin: 0 0.5vw 0 0;
-}
+/* article headers */
 h4{
+  line-height: 0.95;
   color: lightgrey;
-  margin: 0 5px 5px 0;
+  margin: 2vh 5px 1vh 1vw;
+  font-size: 13px;
+  font-family: "FashionFetish";
+  letter-spacing: 5px;
+}
+h4:first-child{
+  margin: 0 5px 1vw 1vw;
+}
+/* page navigation for header, identical to h1 */
+h5{
+  color: lightgrey;
+  margin: 0;
   font-size: 13px;
   font-family: "FashionFetish";
   letter-spacing: 5px;
@@ -115,30 +105,19 @@ p{
   font-size: 10px;
   font-family: "FashionFetish";
   letter-spacing: 2px;
-  margin: 0 5px 15px 10px;
-}
-a:hover h2, a:hover h3, a:hover p, a:hover h4{
-  text-decoration: underline;
+  margin: 0 5px 5px 2vw;
 }
 a p{
   color: white;
   letter-spacing: 4px;
   font-size: 12px;
 }
-main{
-  display: flex;
-  flex-direction: row;
-  min-height: 70vh;
-  margin: 5vh 0 5vh 0;
+a {
+  text-decoration: inherit;
+  color: inherit;
 }
-nav{
-  max-height: 70vh;
-  flex-direction: column;
-  display: flex;
-  align-items: flex-end;
-  color: white;
-  overflow: hidden;
-  margin: 0 3vw 0;
+a:hover h1, a:hover h2, a:hover h3, a:hover p, a:hover h4{
+  text-decoration: underline;
 }
 button{
   background-color: black;
@@ -147,7 +126,12 @@ button{
   align-items: flex-start;
   flex-direction: row;
 }
-button:not(:first-child) {
+.logoBackground{
+  background-image: url("../img/logo_white_trans.png");
+  width: 10vw;
+  height: 10vw;
+}
+nav button:not(:first-child) {
   margin-top: 5vh;
 }
 button:active h2{
@@ -159,19 +143,46 @@ button:hover{
 button:focus{
   outline:0;
 }
+main{
+  display: flex;
+  flex-direction: row;
+  min-height: 70vh;
+  margin: 5vh 0 5vh 0;
+}
 #content-panel{
-  width: 40vw;
-  height: 40vw;
+  width: 35vw;
+  height: 35vw;
   border: solid white 1px;
 }
+nav{
+  width: 29vw;
+  max-height: 70vh;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  overflow: hidden;
+  margin-right:1vw;
+}
 article{
-  margin-left: 3vw;
-  width: 15vw;
+  width: 23.9vw;
+  margin-left: 1.1vw;
+  margin-right: 5vw
 }
 .subMenu{
   display: none;
 }
-#subMenuWeb, #subMenuAni, #subMenu3D, #subMenuCV, #webdesignArticle, #animationArticle, #dddArticle, #cvArticle{
+#infoCard{
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  width: 75vw;
+  height: 50vh;
+  background-color: red;
+  display: none;
+  transform: translate(-50%, 50%);
+}
+#infoCard, #subMenuWeb, #subMenuAni, #subMenu3D, #subMenuCV, #webdesignArticle, #animationArticle, #dddArticle, #cvArticle{
   display: none;
 }
 .wdArticle, .wdArtickle, .aniArticle, .dddArticle{
@@ -183,7 +194,7 @@ article{
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   main{
     flex-direction: column;
   }
