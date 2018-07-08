@@ -27,27 +27,27 @@
 
     <main>
       <nav>
-        <button type="button" name="button" onclick="showWeb();"><h2>WEBDESIGN</h2></button>
+        <button class="menuButton" type="button" name="button" onclick="showWeb();"><h2>WEBDESIGN</h2></button>
         <div id="subMenuWeb">
-          <h3>Billum Friskole</h3>
-          <h3>KEDU - KUBO Robotics</h3>
-          <h3>Erhvervsakademi Lillebælt</h3>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(1)"><h3>Billum Friskole</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(2)"><h3>KEDU - KUBO Robotics</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(3)"><h3>Erhvervsakademi Lillebælt</h3></button>
         </div>
-        <button type="button" name="button" onclick="showAni();"><h2>ANIMATION</h2></button>
+        <button class="menuButton" type="button" name="button" onclick="showAni();"><h2>ANIMATION</h2></button>
         <div id="subMenuAni">
-          <h3>Summer Project</h3>
-          <h3>Animation Principles</h3>
-          <h3>Stopmoption workshop</h3>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(4)"><h3>Summer Project</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(5)"><h3>Animation Principles</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(6)"><h3>Stopmoption workshop</h3></button>
         </div>
-        <button type="button" name="button" onclick="show3D();"><h2>3D-MODELING</h2></button>
+        <button class="menuButton" type="button" name="button" onclick="show3D();"><h2>3D-MODELING</h2></button>
         <div id="subMenu3D">
-          <h3>Logo Animation</h3>
-          <h3>Fundamentals Robot</h3>
-        </div><button type="button" name="button" onclick="showCV();"><h2>CV</h2></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(7)"><h3>Logo Animation</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(8)"><h3>Fundamentals Robot</h3></button>
+        </div>
+        <button class="subMenuButton" class="menuButton" type="button" name="button" onclick="showCV();"><h2>CV</h2></button>
         <div id="subMenuCV">
           <a href="assets/img/logo_white_trans.png" download="">
-          <h3>
-            URK - Udtalelse</h3>
+            <h3>URK Udtalelse - Download</h3>
           </a>
         </div>
       </nav>
@@ -71,14 +71,29 @@
           <p>er fra midt første semester</p>
         </div>
 
-          <div class="wdArticle">
+        <div>
+          <div class="articleSlides">
+            <h4>Billum Friskole (1/4)</h4>
+            <p>
+              Billum Friskole er det seneste projekt præsenteret i min portfolio,
+              den bestod af udvikling af perosnal barnd og dertilhørene hjemmeside
+            </p>
           </div>
 
-          <div class="wdArticle">
+          <div class="articleSlides">
+            <h4>KEDU (1/3)</h4>
+            <p>
+              KUBO Robotics ønskede en platform for undervisere under navnet KEDU (KUBO EDUCATION)
+            </p>
           </div>
 
-          <div class="wdArtickle">
+          <div class="articleSlides">
+            <h4>EAL (1/2)</h4>
+            <p>
+              EAL ønskede, som introductionøvelse af metoder, forbedring af forskellige dele af deres hjemmeside
+            </p>
           </div>
+        </div>
 
         <div id="animationArticle">
           <h4>Summer Project</h4>
@@ -89,13 +104,25 @@
           <p>Icerbreaker workshop for uddannelsens begyndelse</p>
         </div>
 
-          <div class="aniArticle">
+          <div class="articleSlides">
+            <h4>Handdrawn (1/4)</h4>
+            <p>
+              i løbet af sommerferien mellem 2 og 3 semester forsøgte jeg mig på at lave handdrawn animation med en medstuderende
+            </p>
           </div>
 
-          <div class="aniArticle">
+          <div class="articleSlides">
+            <h4>Frog (1/1)</h4>
+            <p>
+              en håndfuld animations principer vist i et par sekudners sprite
+            </p>
           </div>
 
-          <div class="aniArticle">
+          <div class="articleSlides">
+            <h4>Stopmotion (1/2)</h4>
+            <p>
+              i teams på tværs af de tildelte hold skulle vi på kort tid organisere os om at skabe en stopmotion video
+            </p>
           </div>
 
         <div id="dddArticle">
@@ -105,10 +132,12 @@
           <p>Uddanelses start intorduction til 3d modeling i Cinema-4D</p>
         </div>
 
-          <div class="dArticle">
+          <div class="articleSlides">
+            <h4>Logo Animation (1/4)</h4>
           </div>
 
-          <div class="dArticle">
+          <div class="articleSlides">
+            <h4>Cinema 4D (1/1)</h4>
           </div>
 
         <div id="cvArticle">
