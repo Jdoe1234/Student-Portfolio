@@ -188,7 +188,7 @@ article{
 #infoCard, #subMenuWeb, #subMenuAni, #subMenu3D, #subMenuCV, #webdesignArticle, #animationArticle, #dddArticle, #cvArticle{
   display: none;
 }
-.articleSlides{
+.articleSlides .articleSubSlides{
   display: none;
 }
 #frontPage{
