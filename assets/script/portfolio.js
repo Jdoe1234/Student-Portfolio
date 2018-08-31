@@ -2,6 +2,17 @@ hideAll()
 var frontPageArticle = document.getElementById("frontPageArticle");
 frontPageArticle.style.display = "block";
 
+
+// dosnt work when display = "", needs to be display = "none"
+var a = document.getElementById("webdesignArticle");
+a.style.display = "none";
+var b = document.getElementById("animationArticle");
+b.style.display = "none";
+var c = document.getElementById("dddArticle");
+c.style.display = "none";
+var d = document.getElementById("cvArticle");
+d.style.display = "none";
+
 function showInfo(){
   var x = document.getElementById("infoCard");
   if (x.style.display == false){
@@ -35,10 +46,10 @@ function hideArticles(){
   var add = document.getElementById("dddArticle");
   var acv = document.getElementById("cvArticle");
   afp.style.display = "none";
-  awd.style.display = "";
-  ani.style.display = "";
-  add.style.display = "";
-  acv.style.display = "";
+  awd.style.display = "none";
+  ani.style.display = "none";
+  add.style.display = "none";
+  acv.style.display = "none";
 
   var slides = document.getElementsByClassName("articleSlides");
   // running loop times equal to the amount of "slides"
@@ -51,7 +62,7 @@ function showWeb(){
   var x = document.getElementById("subMenuWeb");
   var y = document.getElementById("webdesignArticle");
 
-  if (x.style.display == "none") {
+  if (y.style.display == "none") {
     hideAll();
     x.style.display = "block";
     y.style.display = "block";
@@ -66,7 +77,7 @@ function showAni(){
   var x = document.getElementById("subMenuAni");
   var y = document.getElementById("animationArticle");
 
-  if (x.style.display == "none") {
+  if (y.style.display == "none") {
     hideAll();
     x.style.display = "block";
     y.style.display = "block";
@@ -81,7 +92,7 @@ function show3D(){
   var x = document.getElementById("subMenu3D");
   var y = document.getElementById("dddArticle");
 
-  if (x.style.display == "none") {
+  if (y.style.display == "none") {
     hideAll();
     x.style.display = "block";
     y.style.display = "block";
@@ -96,7 +107,7 @@ function showCV(){
   var x = document.getElementById("subMenuCV");
   var y = document.getElementById("cvArticle");
 
-  if (x.style.display == "none") {
+  if (y.style.display == "none") {
     hideAll();
     x.style.display = "block";
     y.style.display = "block";
@@ -144,26 +155,29 @@ function showArticles(n) {
 
 function showSubSlides(n) {
   var i;
+  var n = n-1;
   // locating and assigning DIVs, with the class "mySlides" assigned, to array "slides"
-  var slides = document.getElementsByClassName("articleSubSlides");
-  // if imported js value is higher than the amount of imported "slides" (.mySlides) assign 1 to js value "slideIndex"
-  if (n > slides.length) {
-    slideIndex = 1}
-  // if imported js value is less than 1 assign slideIndex the value equal to the amount of "slides" (.mySlides) imported
-  if (n < 1) {
-    slideIndex = slides.length}
-  // running loop times equal to the amount of "slides"
-  for (i = 0; i < slides.length; i++) {
-    // assigner style "display none" to slides(1), slides(2), and slide(3) if only 3 slides are used on the site
-    slides[i].style.display = "none";
-  }
-  // assigner style "display block" to 1 slide at (js values start at 0)
-  slides[slideIndex-1].style.display = "block";
+  var slides = document.getElementsByClassName("articleSlides");
+
+  // getting current parent article slide and assigning it value "curentSlide"
+  var currentSlide = slides[n];
+  currentSlide.style.display = "block";
+
+  // getting class children "articleSubSlides" of "articleSlides"
+  var subSlides = currentSlide.getElementsByClassName("articleSubSlides")
+
+  plusSubSlides(n, -1);
 }
 
-// function run when pressing pointers (value either 1 0r -1)
-function plusSubSlides(n) {
-  console.log("running plusSubSlides");
-  // "adding" n value to that of slideIndex
-  showSubSlides(slideIndex += n);
+
+function plusSubSlides(n, j) {
+  var j = j+1;
+  var slides = document.getElementsByClassName("articleSlides");
+  var currentSlide = slides[n];
+  var subSlides = currentSlide.getElementsByClassName("articleSubSlides");
+  for (var i = 0; i < subSlides.length; i++) {
+    subSlides[i].style.display = "none";
+  }
+  subSlides[j].style.display = "flex";
+
 }

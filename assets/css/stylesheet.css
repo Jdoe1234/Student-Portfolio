@@ -126,6 +126,15 @@ button{
   align-items: flex-start;
   flex-direction: row;
 }
+.articleSubSlides button{
+  display: flex;
+  margin-top: auto;
+  align-self: flex-end;
+  margin-right: 10vw;
+}
+.articleSubSlides button h4{
+  margin: 0;
+}
 nav button:not(:first-child) {
   margin-top: 4vh;
 }
@@ -168,6 +177,7 @@ nav{
   margin-right:1vw;
 }
 article{
+  height: 35.2vw;
   width: 23.9vw;
   margin-left: 1.1vw;
   margin-right: 5vw
@@ -189,6 +199,8 @@ article{
   display: none;
 }
 .articleSlides .articleSubSlides{
+  flex-direction: column;
+  height: 35.2vw;
   display: none;
 }
 #frontPage{
