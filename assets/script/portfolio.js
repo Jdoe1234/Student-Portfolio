@@ -16,7 +16,7 @@ d.style.display = "none";
 function showInfo(){
   var x = document.getElementById("infoCard");
   if (x.style.display == false){
-    x.style.display = "block";
+    x.style.display = "flex";
   }else{
     hideInfo();
   }

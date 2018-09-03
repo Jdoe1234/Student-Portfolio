@@ -76,7 +76,7 @@ h2{
 h3{
   color: white;
   margin: 0;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "FashionFetishLight";
   margin: 0 0 0 0;
 }
@@ -85,7 +85,7 @@ h4{
   line-height: 0.95;
   color: lightgrey;
   margin: 2vh 5px 1vh 1vw;
-  font-size: 13px;
+  font-size: 15px;
   font-family: "FashionFetish";
   letter-spacing: 5px;
 }
@@ -96,14 +96,14 @@ h4:first-child{
 h5{
   color: lightgrey;
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
   font-family: "FashionFetish";
   letter-spacing: 5px;
 }
 p{
   color: lightgrey;
-  font-size: 10px;
-  font-family: "FashionFetish";
+  font-size: 13px;
+  font-family: "CenturyGothic";
   letter-spacing: 2px;
   margin: 0 5px 5px 2vw;
 }
@@ -111,6 +111,10 @@ a p{
   color: white;
   letter-spacing: 4px;
   font-size: 12px;
+}
+.infoCard_tab p{
+  color: black;
+  margin: 1vw;
 }
 a {
   text-decoration: inherit;
@@ -191,10 +195,27 @@ article{
   top: -15%;
   width: 75vw;
   height: 50vh;
-  background-color: red;
+  background-color: white;
   display: none;
   transform: translate(-50%, 50%);
 }
+.infoCard_btn{
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid lightgrey;
+  z-index: 10;
+}
+.infoCard_tab{
+  position: relative;
+  flex: 1;
+  margin: 1vw;
+}
+.infoCard_tab:last-child{
+  margin: 1vw 1vw 1vw 0;
+}
+
 #infoCard, #subMenuWeb, #subMenuAni, #subMenu3D, #subMenuCV, #webdesignArticle, #animationArticle, #dddArticle, #cvArticle{
   display: none;
 }
