@@ -36,7 +36,7 @@ header{
   top: 0;
   width: 90vw;
   padding: 0 5vw;
-  height: 10vh;
+  height: 13vh;
   background-color: black;
   display: flex;
   align-items: center;
@@ -119,6 +119,14 @@ a p{
 a {
   text-decoration: inherit;
   color: inherit;
+  align-self: flex-end;
+}
+header a{
+  align-self: center;
+}
+a h3{
+  text-align: right;
+  margin: 1.5vh 25px 5px auto;
 }
 a:hover h1, a:hover h2, a:hover h3, a:hover p, a:hover h4{
   text-decoration: underline;
@@ -142,14 +150,14 @@ button{
 nav button:not(:first-child) {
   margin-top: 4vh;
 }
-#subMenuWeb button, #subMenuAni button, #subMenu3D button, #subMenuCV{
+#subMenuWeb button, #subMenuBra button, #submenuAme button, #subMenuCV{
   margin: 1.5vh 20px 5px auto;
-}
-button:active h2{
-  text-decoration: underline;
 }
 button:hover{
   cursor: pointer;
+}
+button:hover h3, button:hover h4, button:hover h2{
+  text-decoration: underline;
 }
 button:focus{
   outline:0;
@@ -216,7 +224,7 @@ article{
   margin: 1vw 1vw 1vw 0;
 }
 
-#infoCard, #subMenuWeb, #subMenuAni, #subMenu3D, #subMenuCV, #webdesignArticle, #animationArticle, #dddArticle, #cvArticle{
+#infoCard, #subMenuWeb, #subMenuBra, #submenuAme,#webdesignArticle, #brandingArticle, #aboutArticle, #cvArticle{
   display: none;
 }
 .articleSlides .articleSubSlides{

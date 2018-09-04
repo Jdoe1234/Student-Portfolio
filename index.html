@@ -29,35 +29,35 @@
       <button type="button" name="button" onclick="showInfo();">
         <img style="height:50px;" src="assets/img/logo_white_trans.png" alt="logo">
       </button>
-      <a href="blog.frontpage.html" style="margin-left:68px;">
+      <a href="http://www.mmd.jdoe.dk" style="margin-left:68px;">
         <h5>BLOG</h5>
       </a>
     </header>
 
     <main>
       <nav>
-        <button class="menuButton" type="button" name="button" onclick="showWeb();"><h2>WEBDESIGN</h2></button>
+        <button class="menuButton" type="button" name="button" onclick="showWeb();"><h2>WEBUDVILKING</h2></button>
         <div id="subMenuWeb">
-          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(1)"><h3>Billum Friskole</h3></button>
-          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(2)"><h3>KEDU - KUBO Robotics</h3></button>
-          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(3)"><h3>Erhvervsakademi Lillebælt</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(1)"><h3>Billum Friskole - WebDesign</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(2)"><h3>EAL - Redesign</h3></button>
         </div>
-        <button class="menuButton" type="button" name="button" onclick="showAni();"><h2>ANIMATION</h2></button>
-        <div id="subMenuAni">
-          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(4)"><h3>Summer Project</h3></button>
-          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(5)"><h3>Animation Principles</h3></button>
-          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(6)"><h3>Stopmoption workshop</h3></button>
+        <button class="menuButton" type="button" name="button" onclick="showAni();"><h2>BRANDING</h2></button>
+        <div id="subMenuBra">
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(3)"><h3>Logo Bumper</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(4)"><h3>Billum Friskole - Logo</h3></button>
         </div>
-        <button class="menuButton" type="button" name="button" onclick="show3D();"><h2>3D-MODELING</h2></button>
-        <div id="subMenu3D">
-          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(7)"><h3>Logo Animation</h3></button>
-          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(8)"><h3>Fundamentals Robot</h3></button>
-        </div>
-        <button class="subMenuButton" class="menuButton" type="button" name="button" onclick="showCV();"><h2>CV</h2></button>
-        <div id="subMenuCV">
-          <a href="assets/img/logo_white_trans.png" download="">
-            <h3>URK Udtalelse - Download</h3>
+        <button class="menuButton" type="button" name="button" onclick="showAme();"><h2>OM MIG</h2></button>
+        <div id="submenuAme">
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(5)"><h3>IT-baggrund</h3></button>
+          <button class="subMenuButton" type="button" name="button" onclick="currentSlide(6)"><h3>Socialt Arbejde</h3></button>
+
+          <a href="assets/pdf/cv04092018.pdf" target="_blank">
+            <h3>CV - PDF</h3>
           </a>
+
+            <a href="assets/img/logo_white_trans.png" target="_blank">
+              <h3>URK Udtalelse - PDF</h3>
+            </a>
         </div>
       </nav>
       <div id="content-panel">
@@ -73,11 +73,11 @@
 
         <div id="webdesignArticle">
           <h4>Billum Friskole</h4>
-          <p>er andet semesters eksamens projekt</p>
-          <h4>KEDU</h4>
-          <p>er et project i starten af 2. semester</p>
+          <p>Udvikling af hjemmeside for lokal friskole</p>
           <h4>EAL</h4>
-          <p>er fra midt første semester</p>
+          <p>Redesign af ehrvervs akademiet lillebælts hjemmeside med fokus på bruger tilgængelighed</p>
+          <h4>Portfolio kode</h4>
+          <p>Præsentation af kode denne side består af</p>
         </div>
 
         <div class="articleSlides">
@@ -114,23 +114,6 @@
 
         <div class="articleSlides">
           <div class="articleSubSlides">
-            <h4>KEDU (1/2)</h4>
-              <p>
-                KUBO Robotics ønskede en platform for undervisere under navnet KEDU (KUBO EDUCATION)
-              </p>
-              <button type="button" name="button" onclick="plusSubSlides(1, 0)"><h4>Continue...</h4></button>
-          </div>
-          <div class="articleSubSlides">
-            <h4>KEDU (2/2)</h4>
-              <p>
-                Hjemmeside design som forum og værktøjspanel
-              </p>
-              <button type="button" name="button" onclick="showWeb();"><h4>Finish</h4></button>
-          </div>
-        </div>
-
-        <div class="articleSlides">
-          <div class="articleSubSlides">
             <h4>EAL</h4>
             <p>
               EAL ønskede, som introductionøvelse af metoder, forbedring af forskellige dele af deres hjemmeside
@@ -139,52 +122,40 @@
           </div>
         </div>
 
-        <div id="animationArticle">
-          <h4>Summer Project</h4>
-          <p>Er et experiment jeg og en medstuderede forsøgte for at få bredere forståelse for handdrawn animation i løbet af sommerferien</p>
-          <h4>Animation Principles</h4>
-          <p>Enkelt-dags workshop introduction til css sprites</p>
-          <h4>Stopmotion Workshop</h4>
-          <p>Icerbreaker workshop for uddannelsens begyndelse</p>
+        <div id="brandingArticle">
+          <h4>Logo Bumper</h4>
+          <p>Er et prototype projekt der med animation repræsentere forskellige typer impact i forhold til et firmas potentielle værdier</p>
+          <h4>Billum Friskole</h4>
+          <p>Billum friskole manglede en visual identitet der kunne apelere til lokal området og deres brugere</p>
         </div>
 
           <div class="articleSlides">
             <div class="articleSubSlides">
-              <h4>Handdrawn (1/2)</h4>
+              <h4>Logo Bumper (1/2)</h4>
               <p>
                 i løbet af sommerferien mellem 2 og 3 semester forsøgte jeg mig på at lave handdrawn animation med en medstuderende
+              </p>
+              <button type="button" name="button" onclick="plusSubSlides(2, 0)"><h4>Continue...</h4></button>
+            </div>
+            <div class="articleSubSlides">
+              <h4>Logo Bumper (2/2)</h4>
+              <p>
+                i løbet af sommerferien mellem 2 og 3 semester forsøgte jeg mig på at lave handdrawn animation med en medstuderende
+              </p>
+              <button type="button" name="button" onclick="showAni();"><h4>Finish</h4></button>
+            </div>
+          </div>
+
+          <div class="articleSlides">
+            <div class="articleSubSlides">
+              <h4>Billum Friskole (1/2)</h4>
+              <p>
+                i teams på tværs af de tildelte hold skulle vi på kort tid organisere os om at skabe en stopmotion video
               </p>
               <button type="button" name="button" onclick="plusSubSlides(3, 0)"><h4>Continue...</h4></button>
             </div>
             <div class="articleSubSlides">
-              <h4>Handdrawn (2/2)</h4>
-              <p>
-                i løbet af sommerferien mellem 2 og 3 semester forsøgte jeg mig på at lave handdrawn animation med en medstuderende
-              </p>
-              <button type="button" name="button" onclick="showAni();"><h4>Finish</h4></button>
-            </div>
-          </div>
-
-          <div class="articleSlides">
-            <div class="articleSubSlides">
-              <h4>Frog</h4>
-              <p>
-                en håndfuld animations principer vist i et par sekudners sprite
-              </p>
-              <button type="button" name="button" onclick="showAni();"><h4>Finish</h4></button>
-            </div>
-          </div>
-
-          <div class="articleSlides">
-            <div class="articleSubSlides">
-              <h4>Stopmotion (1/2)</h4>
-              <p>
-                i teams på tværs af de tildelte hold skulle vi på kort tid organisere os om at skabe en stopmotion video
-              </p>
-              <button type="button" name="button" onclick="plusSubSlides(5, 0)"><h4>Continue...</h4></button>
-            </div>
-            <div class="articleSubSlides">
-              <h4>Stopmotion (2/2)</h4>
+              <h4>Billum Friskole (2/2)</h4>
               <p>
                 i teams på tværs af de tildelte hold skulle vi på kort tid organisere os om at skabe en stopmotion video
               </p>
@@ -192,62 +163,28 @@
             </div>
           </div>
 
-        <div id="dddArticle">
-          <h4>Logo Animation</h4>
-          <p>Arbejde i undervisning med Cinema-4D</p>
-          <h4>Fundamentals Robot</h4>
-          <p>Uddanelses start intorduction til 3d modeling i Cinema-4D</p>
+        <div id="aboutArticle">
+          <h4>Contac Info:</h4>
+          <p>TINO0144@EDU.EAL.DK</p>
+          <p>88 88 88 88</p>
         </div>
 
-          <div class="articleSlides">
-            <div class="articleSubSlides">
-              <h4>Logo Animation (1/4)</h4>
-              <p>
-                i teams på tværs af de tildelte hold skulle vi på kort tid organisere os om at skabe en stopmotion video
-              </p>
-              <button type="button" name="button" onclick="plusSubSlides(6, 0)"><h4>Continue...</h4></button>
-            </div>
-            <div class="articleSubSlides">
-              <h4>Logo Animation (2/4)</h4>
-              <p>
-                i teams på tværs af de tildelte hold skulle vi på kort tid organisere os om at skabe en stopmotion video
-              </p>
-              <button type="button" name="button" onclick="plusSubSlides(6, 1)"><h4>Continue...</h4></button>
-            </div>
-            <div class="articleSubSlides">
-              <h4>Logo Animation (3/4)</h4>
-              <p>
-                i teams på tværs af de tildelte hold skulle vi på kort tid organisere os om at skabe en stopmotion video
-              </p>
-              <button type="button" name="button" onclick="plusSubSlides(6, 2)"><h4>Continue...</h4></button>
-            </div>
-            <div class="articleSubSlides">
-              <h4>Logo Animation (4/4)</h4>
-              <p>
-                i teams på tværs af de tildelte hold skulle vi på kort tid organisere os om at skabe en stopmotion video
-              </p>
-              <button type="button" name="button" onclick="show3D();"><h4>Finish</h4></button>
-            </div>
+        <div class="articleSlides">
+          <div class="articleSubSlides">
+            <h4>IT-bagrund</h4>
+            <p>Udannelsesvis har jeg har været igennem IT-supporter grundforløb, og taget 1 år på IT-teknolog forløbet.</p>
+            <p>jeg har udover udannelse og selv bygget, samlet, og renset hardware, samt foretaget software "reperationer".</p>
+            <button type="button" name="button" onclick="showAme();"><h4>Finish</h4></button>
           </div>
+        </div>
 
-          <div class="articleSlides">
-            <div class="articleSubSlides">
-              <h4>Cinema 4D</h4>
-              <p>
-                I starten af første semester arbejdede vi med Cinema4D i undervisningen og figuren her blev lavet i disse undervisnings moduler!
-              </p>
-              <button type="button" name="button" onclick="show3D();"><h4>Finish</h4></button>
-            </div>
+        <div class="articleSlides">
+          <div class="articleSubSlides">
+            <h4>Socialt arbejde</h4>
+            <p>Udannelsesvis har jeg læst 1 år på pædagigseminariet.</p>
+            <p>Jeg har derudover arbejdet i klasselokale, børnehave, SFO, specialundervisning og har fungeret som Afdeligsleder i en RØDE KORS lektiecafé.</p>
+            <button type="button" name="button" onclick="showAme();"><h4>Finish</h4></button>
           </div>
-
-        <div id="cvArticle">
-          <p style="margin-left:0;">Jeg har uden for den aktuelle uddannelse også erfaring på 2 områder:</p>
-          <h4>PC/Elektronik</h4>
-          <p>Udannelsesvis har jeg har været igennem IT-supporter grundforløb, og taget 1 år på dateteknikker forløbet.</p>
-          <p>jeg har udover udannelse og selv bygget, samlet, og renset hardware, samt foretaget software "reperationer".</p>
-          <h4>Socialt arbejde</h4>
-          <p>Udannelsesvis har jeg læst 1 år på pædagigseminariet.</p>
-          <p>Jeg har derudover arbejdet i klasselokale, børnehave, SFO, specialundervisning og har fungeret som Afdeligsleder i en RØDE KORS lektiecafé.</p>
         </div>
       </article>
     </main>

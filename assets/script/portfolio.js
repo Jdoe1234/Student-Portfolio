@@ -6,12 +6,10 @@ frontPageArticle.style.display = "block";
 // dosnt work when display = "", needs to be display = "none"
 var a = document.getElementById("webdesignArticle");
 a.style.display = "none";
-var b = document.getElementById("animationArticle");
+var b = document.getElementById("brandingArticle");
 b.style.display = "none";
-var c = document.getElementById("dddArticle");
+var c = document.getElementById("aboutArticle");
 c.style.display = "none";
-var d = document.getElementById("cvArticle");
-d.style.display = "none";
 
 function showInfo(){
   var x = document.getElementById("infoCard");
@@ -28,13 +26,11 @@ function hideInfo(){
 }
 function hideAll(){
   var x = document.getElementById("subMenuWeb");
-  var y = document.getElementById("subMenuAni");
-  var z = document.getElementById("subMenu3D");
-  var p = document.getElementById("subMenuCV");
+  var y = document.getElementById("subMenuBra");
+  var z = document.getElementById("submenuAme");
   x.style.display = "none";
   y.style.display = "none";
   z.style.display = "none";
-  p.style.display = "none";
 
   hideArticles()
 }
@@ -42,14 +38,12 @@ function hideAll(){
 function hideArticles(){
   var afp = document.getElementById("frontPageArticle");
   var awd = document.getElementById("webdesignArticle");
-  var ani = document.getElementById("animationArticle");
-  var add = document.getElementById("dddArticle");
-  var acv = document.getElementById("cvArticle");
+  var ani = document.getElementById("brandingArticle");
+  var add = document.getElementById("aboutArticle");
   afp.style.display = "none";
   awd.style.display = "none";
   ani.style.display = "none";
   add.style.display = "none";
-  acv.style.display = "none";
 
   var slides = document.getElementsByClassName("articleSlides");
   // running loop times equal to the amount of "slides"
@@ -74,8 +68,8 @@ function showWeb(){
 }
 
 function showAni(){
-  var x = document.getElementById("subMenuAni");
-  var y = document.getElementById("animationArticle");
+  var x = document.getElementById("subMenuBra");
+  var y = document.getElementById("brandingArticle");
 
   if (y.style.display == "none") {
     hideAll();
@@ -88,9 +82,9 @@ function showAni(){
   }
 }
 
-function show3D(){
-  var x = document.getElementById("subMenu3D");
-  var y = document.getElementById("dddArticle");
+function showAme(){
+  var x = document.getElementById("submenuAme");
+  var y = document.getElementById("aboutArticle");
 
   if (y.style.display == "none") {
     hideAll();
