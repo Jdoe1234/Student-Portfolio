@@ -58,7 +58,7 @@ function showWeb(){
 
   if (y.style.display == "none") {
     hideAll();
-    x.style.display = "block";
+    x.style.display = "flex";
     y.style.display = "block";
   } else {
     hideAll();
@@ -73,7 +73,7 @@ function showAni(){
 
   if (y.style.display == "none") {
     hideAll();
-    x.style.display = "block";
+    x.style.display = "flex";
     y.style.display = "block";
   } else {
     hideAll();
@@ -88,7 +88,7 @@ function showAme(){
 
   if (y.style.display == "none") {
     hideAll();
-    x.style.display = "block";
+    x.style.display = "flex";
     y.style.display = "block";
   } else {
     hideAll();

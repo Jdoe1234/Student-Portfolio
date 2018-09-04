@@ -22,6 +22,10 @@
   font-family: "FashionFetish";
   src: url("../font/Fashion_Fetish_Regular.ttf");
 }
+@font-face {
+  font-family: "LatoHairline";
+  src: url("../font/Lato_Hairline.ttf");
+}
 html, body{
   align-items: center;
   display: flex;
@@ -74,6 +78,8 @@ h2{
 }
 /* submenu headers */
 h3{
+  align-self: flex-end;
+  display: flex;
   color: white;
   margin: 0;
   font-size: 17px;
@@ -116,6 +122,12 @@ a p{
   color: black;
   margin: 1vw;
 }
+h3 i{
+  font-family: "LatoHairline";
+  font-size: 13px;
+  color: rgb(200, 200, 200);
+  align-self: center;
+}
 a {
   text-decoration: inherit;
   color: inherit;
@@ -128,7 +140,7 @@ a h3{
   text-align: right;
   margin: 1.5vh 25px 5px auto;
 }
-a:hover h1, a:hover h2, a:hover h3, a:hover p, a:hover h4{
+a:hover h1, a:hover h2, a:hover h3 i, a:hover p, a:hover h4{
   text-decoration: underline;
 }
 button{
@@ -226,6 +238,7 @@ article{
 
 #infoCard, #subMenuWeb, #subMenuBra, #submenuAme,#webdesignArticle, #brandingArticle, #aboutArticle, #cvArticle{
   display: none;
+  flex-direction: column;
 }
 .articleSlides .articleSubSlides{
   flex-direction: column;
